@@ -13,13 +13,6 @@ class EmployeeForm(FlaskForm):
     employee = StringField("Employee Name:")
     submit = SubmitField("add")
 
-#rendering list of employees only
-# @app.route('/', methods=["GET", "POST"])
-# def index():
-#     if 'employee' in request.form:
-#         employees.append(request.form['employee'])
-#     return render_template("index.html", employees=employees, template_form=EmployeeForm(), weekdays=weekdays)
-
 @app.route('/', methods=["GET", "POST"])
 def index():
     if 'employee' in request.form:
