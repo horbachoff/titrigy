@@ -1,3 +1,4 @@
+
 ABOUT The Project
 
                                          TITRIGY (Clover Tier 3 On-Call Schedule Generator)
@@ -25,5 +26,10 @@ ABOUT The Project
     4. wtforms: used to create fields for the form.
     
  💻 SETTING UP YOUR LOCAL MACHINE:  
+ 
+     1. Make sure you have PIP installed: https://pip.pypa.io/en/stable/installation/
+     2. Install Flask, please follow the link for the installation: https://flask.palletsprojects.com/en/2.2.x/installation/
+     3 Once you have Flask installed, and you have cloned the repository to your local machine, make sure to run "flask run" - in your app.py directory.
+     4. If the previous steps were completed correctly, you will be able to access your local host.
  
   
