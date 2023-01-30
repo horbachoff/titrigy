@@ -6,8 +6,6 @@ from wtforms import StringField, SubmitField
 app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = 'mysecret'
 
-
-#initiate employees list as empty
 employees = []
 weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
