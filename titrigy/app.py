@@ -20,11 +20,9 @@ def index():
     schedule = {}
     if request.method == "POST" and 'generate' in request.form:
         if len(employees) > 0:
+            shuffled_employees = random.sample(employees, len(employees)) 
             for i, weekday in enumerate(weekdays):
-                if i>=len(employees):
-                    schedule[weekday] = employees[i % len(employees)]
-                else:
-                    schedule[weekday] = employees[i]
+                schedule[weekday] = shuffled_employees[i % len(employees)]
     return render_template("index.html", employees=employees, template_form=EmployeeForm(), weekdays=weekdays, schedule=schedule)
 
 if __name__ == "__main__":
